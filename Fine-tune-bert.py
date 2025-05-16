@@ -279,6 +279,7 @@ def train_epoch(model, loader, crit, opt, scaler, device):
 
     return loss_sum/total, correct/total
 
+# We don't use it in our experiments, please remove it from main() for reproduction
 def freeze_bert_layers(model: nn.Module, n_unfrozen_layers: int = 2):
     """
     Freeze all BERT parameters *except*

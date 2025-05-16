@@ -248,7 +248,7 @@ def evaluate(model,loader,crit,device):
         correct+=logit.argmax(1).eq(y).sum().item()
     return (float("inf"),0.) if total==0 else (loss_sum/total,correct/total)
 
-# ─────────────────── helper to freeze ViT layers ────────────────────
+# ─────────────────── helper to freeze ViT layers, we don't use it in our experiments, please remove it from main() for reproduction ────────────────────
 def freeze_vit_layers(model: nn.Module, n_unfrozen_blocks: int = 2):
     """
     Freeze all ViT parameters *except*
