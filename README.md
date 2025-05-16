@@ -3,6 +3,8 @@
 
 This repository implements end-to-end experiments for two-stage, superclass-aware fine-tuning of both ViT and BERT, followed by a suite of privacy-risk analyses:
 
+Before starting, please download datasets and reorganize them using /dataset-related-files(check dataset_structure.txt)/download_datasets.sh
+
 1. **Log-Logit-Gap CDFs & Δ-Scores**  
 2. **Per-Sample AUC-Style Summaries & Stage-2 vs Stage-1 Comparison**  
 3. **Sample–Sample SSIM Matrix**  
